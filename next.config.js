@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    API: "http://localhost:3001"
+    API: process.env.NODE_ENV == "production" ? "https://simple-task-apii.herokuapp.com" : "http://localhost:3001"
   }
 }
 
